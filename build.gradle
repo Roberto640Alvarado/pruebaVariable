@@ -21,6 +21,13 @@ dependencies {
 	implementation 'javax.annotation:javax.annotation-api:1.3.2'
 }
 
+jar{
+      enabled = false
+	manifest {
+		attributes 'Main-Class': 'com.example.demo.PruebaVariableApplication'
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
